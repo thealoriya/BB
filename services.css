@@ -43,6 +43,24 @@ body {
     margin-bottom: 10px;
 }
 
+.company-logo {
+    flex: 0 0 auto;
+    max-height: 128px;
+    max-width: 256px;
+    overflow: hidden;
+    display: flex; /* Add display:flex to the container */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.company-logo img {
+    max-width: 100%; /* Set maximum width to 100% */
+    max-height: 100%; /* Set maximum height to 100% */
+    width: auto; /* Allow the browser to adjust width while maintaining aspect ratio */
+    height: auto; /* Allow the browser to adjust height while maintaining aspect ratio */
+    border-radius: 10px;
+}
+
 /* Navigation Styling */
 .navigation-bar {
     padding: 0 10%;
