@@ -16,11 +16,11 @@ body {
 /* Header Styling */
 .portfolio-box {
     padding: 2% 10%;
-    display: flex;
     text-align: left;
     background-color:#CCD5AD;
     border: 1px solid #ccc;
     border-radius: 10px;
+    display: flex;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -61,6 +61,22 @@ body {
     width: auto; /* Allow the browser to adjust width while maintaining aspect ratio */
     height: auto; /* Allow the browser to adjust height while maintaining aspect ratio */
     border-radius: 10px;
+}
+
+
+
+
+/* Navigation Styling */
+.navigation-bar {
+    padding: 0 10%;
+    background-color: #779977;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Navigation Styling */
