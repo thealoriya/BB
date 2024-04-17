@@ -16,11 +16,11 @@ body {
 /* Header Styling */
 .portfolio-box {
     padding: 2% 10%;
-    display: flex;
     text-align: left;
     background-color:#CCD5AD;
     border: 1px solid #ccc;
     border-radius: 10px;
+    display: flex;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
