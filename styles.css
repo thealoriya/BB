@@ -21,6 +21,7 @@ body {
     background-color:#CCD5AD;
     border: 1px solid #ccc;
     border-radius: 10px;
+    justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
