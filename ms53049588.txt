@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "bitsnbytes.in",
+  "Id": "01a03ce7-d8a5-44f4-a405-914551a4a505"
+}
