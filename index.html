@@ -26,9 +26,9 @@
     <div class="navigation-bar">
         <div>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#team">Leadership</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/team">Leadership</a>
 <!--             <a href="Ranjeet_Aloriya.pdf" download>Resume</a> -->
             <a href="#contact">Contact Us</a>
         </div>
@@ -185,17 +185,18 @@ Ready to take proactive steps towards enhancing your data security measures? Par
         document.addEventListener("DOMContentLoaded", function() {
             const links = document.querySelectorAll('.navigation-bar a');
             links.forEach(link => {
-                link.addEventListener('click', smoothScroll);
+                link.addEventListener('click', navigate);
             });
 
-            function smoothScroll(e) {
+            function navigate(e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
+                const targetId = this.getAttribute('href').substring(1); // Remove the leading "#"
+                const targetElement = document.getElementById(targetId);
                 if (targetElement) {
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
+                    history.pushState({}, '', '/' + targetId); // Update the URL without the "#" symbol
                 }
             }
         });
