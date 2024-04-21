@@ -87,19 +87,19 @@ Ready to take proactive steps towards enhancing your data security measures? Par
                 <i class="fa-solid fa-code"></i>
                 <h2>Data Breach Review</h2>
                 <p>Empower your data security with tailored solutions and rapid response expertise. Protect your organization from breaches with confidence.</p>
-                <a href="dbr.html">Learn More</a>
+                <a href="dbr">Learn More</a>
             </div>
             <div class="work-s">
                 <i class="fa-solid fa-table"></i>
                 <h2>Data Mining</h2>
                 <p>Elevate your data security with advanced data mining expertise. Unlock valuable insights and safeguard your organization's sensitive information with confidence.</p>
-                <a href="dm.html">Learn More</a>
+                <a href="dm">Learn More</a>
             </div>
             <div class="work-s">
                 <i class="fa fa-light fa-atom"></i>
                 <h2>Notification List</h2>
                 <p>Streamline your data breach response with expert notification list creation. Ensure prompt and effective communication with stakeholders, guided by compliance and professionalism.</p>
-                <a href="nl.html">Learn More</a>
+                <a href="nl">Learn More</a>
             </div>
         </div>
     </section>
@@ -181,6 +181,25 @@ Ready to take proactive steps towards enhancing your data security measures? Par
             <a href="mailto:ranjeet.aloriya@gmail.com" style="color: #fff;">info@bitsnbytes.in</a>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('.navigation-bar a');
+            links.forEach(link => {
+                link.addEventListener('click', smoothScroll);
+            });
+
+            function smoothScroll(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
