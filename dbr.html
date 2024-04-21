@@ -115,6 +115,25 @@
             <a href="mailto:ranjeet.aloriya@gmail.com" style="color: #fff;">info@bitsnbytes.in</a>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('.navigation-bar a');
+            links.forEach(link => {
+                link.addEventListener('click', smoothScroll);
+            });
+
+            function smoothScroll(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
