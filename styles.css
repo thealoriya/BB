@@ -60,7 +60,7 @@ body {
     max-height: 100%; /* Set maximum height to 100% */
     width: auto; /* Allow the browser to adjust width while maintaining aspect ratio */
     height: auto; /* Allow the browser to adjust height while maintaining aspect ratio */
-    border-radius: 10px;
+    border-radius: 11px;
 }
 
 
