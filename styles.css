@@ -1,4 +1,4 @@
-/* Reset margin and padding for the entire page */
+/* Base styles for larger screens (laptops, desktops) */
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     text-align: center; /* Center text */
 }
 
-#countdown{
+#countdown {
     margin: 20px;
 }
 
@@ -33,4 +33,31 @@ body {
     margin: 0 15px; /* Spacing around text */
     color: #333;
     line-height: 1.2; /* Adjust line height for alignment */
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .announcement-container {
+        flex-direction: column; /* Stack logos and text vertically on mobile */
+    }
+    
+    .logo {
+        width: 100px; /* Reduce logo size on mobile */
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+    
+    .announcement-text {
+        font-size: 18px; /* Adjust text size for mobile screens */
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-text {
+        font-size: 16px; /* Further reduce text size for smaller screens */
+    }
+
+    #countdown {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
 }
